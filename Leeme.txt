@@ -1,0 +1,27 @@
+Para que el proyecto abra en su totalidad es necesario abrir con Brackets o Sublime.
+
+Falta agregar mas funcionalidades.
+
+Agregados Recientemente
+- Sub paginas independientes
+- Se elimino la seccion Banner
+- Se elimino pagina autocompletable (pagina principal + secciones) 
+- Se agrego formulario modal para cargar producto al carrito
+- Se agrego ubicacion del local (para contacto) OPCIONAL
+- Se agrego pequeña descripcion de la empresa
+- Se agrego el apartado de Cuenta del Cliente (donde podra observar los productos que tiene en el carrito y poder confirmar el pedido)
+
+
+
+Funcionalidades (Faltan)
+- Agregar producto al carrito (falta calculos y funcionalidad en el boton confirmar)
+- Cuenta del Cliente funcional (sin funcionalidades hasta la fecha)
+- Mejorar descripciones 
+
+
+Funcionalidades Opcionales
+- Agregar Fotos en la seccion de Empresa (Slide con fotos)
+- Login momentaneo
+
+
+Trabajando al respecto!!

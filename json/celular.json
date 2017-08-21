@@ -1,0 +1,80 @@
+{
+    "arrayCelular":[{
+            
+            "img": "0.jpg",
+            "marca": "Apple",
+            "detalle": "Iphone 6 con 64gb de memoria interna",
+            "disponibilidad": "En Stock",
+            "precio": 2000000
+            
+        },
+        {
+            
+            "img": "1.jpg",
+            "marca": "Apple",
+            "detalle": "Iphone 6 con 64gb de memoria interna",
+            "disponibilidad": "En Stock",
+            "precio": 2000000
+            
+        },
+        {
+            
+            "img": "2.jpg",
+           "marca":"Samsung",
+            "detalle":"Samsung Galaxy A7 con 16 gb de memoria interna",
+            "disponibilidad":"En Stock",
+            "precio": 2550000
+            
+        },
+        {
+            "img": "3.jpg",
+            "marca":"Sony",
+            "detalle":"Sony Xperia Z4 32gb",
+            "disponibilidad":"En Stock",
+            "precio": 1500000
+        },
+        {
+            "img": "4.jpg",
+            "marca":"Samsung",
+            "detalle":"Samsung Galaxy S7 32 gb de memoria interna",
+            "disponibilidad":"En Stock",
+            "precio": 20000
+        },
+        {
+            "img": "5.jpg",
+            "marca":"Huawwei",
+            "detalle":"Huawei P8",
+            "disponibilidad":"En Stock",
+            "precio": 20000
+        },
+        {
+            "img": "6.jpg",
+            "marca":"Moto",
+            "detalle":"Moto G4 16 gb de almacenamiento interno",
+            "disponibilidad":"En Stock",
+            "precio": 20000
+        },
+        {
+           "img": "7.jpg",
+            "marca":"Apple",
+            "detalle":"Iphone 5s 16 gb de memoria interna",
+            "disponibilidad":"En Stock",
+            "precio": 20000
+        },
+     
+        {
+            "img": "8.jpg",
+            "marca":"Samsung",
+            "detalle":"Samsung Galaxy S7 EDGE 32 gb",
+            "disponibilidad":"En Stock",
+            "precio": 20000
+        },
+        {
+            "img": "9.jpg",
+            "marca":"Sony",
+            "detalle":"Sony Xperia Z5 32gb de almacenamiento interno",
+            "disponibilidad":"En Stock",
+            "precio": 20000
+        }
+    ]
+}

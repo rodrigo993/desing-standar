@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   
+    <meta charset="UTF-8">
+    <title>Principal</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <script src="../lib/jquery-3.2.1.min.js"></script>
+    <script src="../js/verDetalle.js"></script>
+
+
+
+
+
+<script>
+      function calculo(cantidad,detalle4){
+ 
+	// Calculo del total
+	total = detalle4*cantidad;
+
+	console.log(detalle4);
+    console.log(cantidad);
+          
+          
+    totalText.value = total;
+
+ 
+}
+      
+    
+</script>
+</head>
+<body onload="leer()" class="body" >
+ 
+  
+   <section class="seccionToggle" >
+         <div class="wrap">
+              
+              <br>
+               <label3> DETALLES CUENTA</label3>
+               <br>
+              <form >
+                
+                 <table >
+                    
+                     <tr>
+                            <label>DISPONIBLE</label>
+                            
+                            <label2 for="disponible">
+                             1000 USS
+                            </label2>
+                             
+                     </tr >
+                     
+                    <tr>
+                         <label>ACUMULADO</label>
+                         <label2 for="acumulado">
+                             acumulado
+                         </label2>
+                     </tr>
+                     
+                     <tr>
+                         <label>TOTAL</label>
+                         <label2 for="total">
+                             total
+                         </label2>
+                     </tr>
+
+                 </table>
+                 
+                 </form>
+                       <div>
+                           
+                            <input class="submit1" type="submit" value="Confirmar"  >
+                            <input class="submit2" type="submit" value="Cerrar" href="javascript:history.back()">
+                       
+                        </div>
+               
+                </div>
+
+         
+     </section>
+     
+       <a href="#" id="btn-toggle" class="btn-toggle">Cuenta</a>
+     
+     
+    <div class="main"> 
+     
+   <div class= "titulo">
+       <h1>DETALLES</h1>
+   </div>
+   
+   <div class="logo">
+        <a title="" href="../index.html"><img class="imgCabecera" src="../img/logo.png" alt="" /></a>
+   </div>
+   
+   
+   <div class= "cuenta">
+     
+
+      
+        <a href="#"  id="img-toggle"><img class="imgCuenta" src="../img/user5.png" alt="" /></a>
+     
+      
+    
+   </div>
+   
+
+    <div class="blank">
+    
+    <a id="detalle2"></a>
+     
+    </div>
+    
+    
+     <div id="contenido-flex"> 
+    
+    <div>
+       <table class="contenido">
+           
+           <tr>
+            <td align="left" valign = "top">
+            <section class="contenido-menu">
+           
+           
+        
+    <div id="menu">
+        <ul>
+                         <div id="producto"> 
+                            <li class="nivel1"><a href="producto.html" >Productos</a></li>
+                        </div>
+                        
+                        <div id="informatica"> 
+                            <li class="nivel1"><a href="informatica.html" >Informatica</a></li>
+                        </div>
+                        
+                        <div id="electro"> 
+                            <li class="nivel1"><a href="electro.html" >Electrodomesticos</a></li>
+                        </div>
+                        
+                        <div id="celular"> 
+                            <li class="nivel1"><a href="celular.html" >Celulares</a></li>
+                        </div>
+                        
+                        <div id="estamos"> 
+                            <li class="nivel1"><a href="estamos.html" >Estamos aqui</a></li>
+                        </div>
+                        
+                        <div id="empresa"> 
+                            <li class="nivel1"><a href="empresa.html" >La empresa</a></li>
+                        </div>
+            </ul>
+       
+       
+</div>
+                    </section >
+         </td>
+               <td > 
+                   <br>
+                   
+                 <section class="contenido-producto" >
+                   <table class="tabla-contenido" border= 2px > 
+                   <tr class="filaDetalle" >
+                      
+                       <td width="40%">
+                           <img class="img-contenido-detalle" src="" id="imagen">
+                       </td>
+                       
+                       
+                       <td width="60%">
+                       <section>
+                       
+                        <p class="detalle-marca">  MARCA
+                        <br>
+                        <a id="marca"></a>
+                    
+                        </p>
+                        
+                        <p class="detalle-detalle">  DETALLE
+                        <br>
+                        <a id="detalle"></a>
+                        
+                        </p>
+                       
+                        <p class="detalle-disponibilidad">  DISPONIBILIDAD
+                        <br>
+                        <a id="disponibilidad"></a>
+                      
+                        </p>
+                        
+                        
+                        <p class="detalle-precio">  PRECIO
+                        <br>
+                        <a id="precio"></a>
+                         
+                        </p>
+                           
+                       </section>
+                       
+                       
+                    </tr>
+                    
+                   
+                   
+                   </table>
+                
+                  
+                   <table class="botones"  >
+                           <TR> 
+                               <TD></TD> 
+                               <TD></TD> 
+                               <TD></TD> 
+                               <TD></TD> 
+                              
+                               <TD>
+                                          <a  onclick="detalle3();" class="boton" href="#agregar" >Agregar</a>
+			                              <a class="boton2" href="javascript:history.back();" target="_blank">Atras</a>
+                                   
+                               </TD> 
+                            
+                           </TR> 
+                           
+                           
+        
+                           
+                       
+                   </table>
+                 
+                  
+                  </section>
+               </td>
+               
+           </tr>
+           
+       </table>
+       
+        </div>
+    </div>
+    </div>
+    
+    
+
+
+
+</body>
+       
+        <script type="text/javascript">
+            
+          var clave = localStorage.getItem("clave");
+          var tipo = localStorage.getItem("tipo");
+            
+      
+            
+         console.log("Id del producto selecccionado " + clave);
+         console.log("TIPO " + tipo)
+          
+             if ( tipo == 1) {
+                  
+                    
+             var leer = function() {
+             
+                 
+                $.getJSON("../json/informatica.json", function (data) { 
+               var img, marca, detalle, disponibilidad, precio;
+    
+                 
+               img = data.arrayInformatica[clave].img;
+                 console.log(img);
+            
+               marca = data.arrayInformatica[clave].marca;
+                 console.log(marca);
+                 
+               detalle= data.arrayInformatica[clave].detalle;
+                 console.log(detalle);
+              detalle2 = data.arrayInformatica[clave].detalle;
+                console.log(detalle2);
+                    
+               disponibilidad=data.arrayInformatica[clave].disponibilidad;
+                 console.log(disponibilidad);
+                    
+                disponibilidad2=data.arrayInformatica[clave].disponibilidad;
+                 
+                    
+               precio= data.arrayInformatica[clave].precio;
+                 console.log(precio);
+                precio2= data.arrayInformatica[clave].precio;
+               
+    
+            
+              document.getElementById('imagen').src= "../img/info/"+img;
+              document.getElementById('marca').innerHTML = marca;
+              document.getElementById('detalle').innerHTML = detalle;
+              document.getElementById('disponibilidad').innerHTML = disponibilidad;
+              document.getElementById('precio').innerHTML = precio + "  USS";
+    
+              document.getElementById('detalle2').innerHTML = detalle;
+                 
+              localStorage.clear();
+                
+             });
+              
+            
+                    
+        } 
+                            
+        }
+            if ( tipo == 2) {
+               
+                console.log("Entro en tipo celular " + tipo)
+               var leer = function() {
+             
+                 
+                $.getJSON("../json/celular.json", function (data) { 
+               var img, marca, detalle, disponibilidad, precio;
+    
+                 
+              img = data.arrayCelular[clave].img;
+                 console.log(img);
+            
+               marca = data.arrayCelular[clave].marca;
+                 console.log(marca);
+                 
+               detalle= data.arrayCelular[clave].detalle;
+                 console.log(detalle);
+              detalle2 = data.arrayCelular[clave].detalle;
+                console.log(detalle2);
+                    
+               disponibilidad=data.arrayCelular[clave].disponibilidad;
+                 console.log(disponibilidad);
+                    
+                disponibilidad2=data.arrayCelular[clave].disponibilidad;
+                 
+                    
+               precio= data.arrayCelular[clave].precio;
+                 console.log(precio);
+                precio2= data.arrayCelular[clave].precio;
+               
+    
+            
+              document.getElementById('imagen').src= "../img/cel/"+img;
+              document.getElementById('marca').innerHTML = marca;
+              document.getElementById('detalle').innerHTML = detalle;
+              document.getElementById('disponibilidad').innerHTML = disponibilidad;
+              document.getElementById('precio').innerHTML = precio + "  USS";
+    
+              document.getElementById('detalle2').innerHTML = detalle;
+                 
+              
+                
+             });
+                    
+        } 
+    } 
+           if ( tipo == 3) {
+            
+               console.log("Entro en tipo electo " + tipo)
+                    
+                var leer = function() {
+             
+                 
+                $.getJSON("../json/electro.json", function (data) { 
+               var img, marca, detalle, disponibilidad, precio;
+    
+                 
+               img = data.arrayElectro[clave].img;
+                 console.log(img);
+            
+               marca = data.arrayElectro[clave].marca;
+                 console.log(marca);
+                 
+               detalle= data.arrayElectro[clave].detalle;
+                 console.log(detalle);
+                detalle2 = data.arrayElectro[clave].detalle;
+               disponibilidad=data.arrayElectro[clave].disponibilidad;
+                 console.log(disponibilidad);
+                disponibilidad2 = data.arrayElectro[clave].disponibilidad;
+               precio= data.arrayElectro[clave].precio;
+                 console.log(precio);
+               precio2= data.arrayElectro[clave].precio;
+    
+            
+              document.getElementById('imagen').src= "../img/electro/"+img;
+              document.getElementById('marca').innerHTML = marca;
+              document.getElementById('detalle').innerHTML = detalle;
+              document.getElementById('disponibilidad').innerHTML = disponibilidad;
+              document.getElementById('precio').innerHTML = precio + "  USS";
+    
+              document.getElementById('detalle2').innerHTML = detalle;
+                 
+             localStorage.clear();
+                
+             });
+    
+            } 
+        }
+            
+            
+            
+                          
+        </script>
+        
+    
+<div class="modal-wrapper" id="agregar">
+    <div class="popup-contenedor">
+       <h2>Agregar Producto</h2>
+       
+       <form >
+                
+                 <table class="pedido" border= 1px >
+                   
+                     <tr class="pedido">
+                           <td width="10%"><strong>Producto
+                            
+                            <br>
+                            <a id="detalle3"></a>
+                            
+                           </strong></td>    
+                     </tr >
+                    <tr class="pedido">
+                           <td>Precio
+                            <br>
+                            <a id="detalle4"></a>
+                              
+                              </td> 
+                              
+                     </tr >
+                      <tr class="pedido">
+                           <td>Disponibilidad
+                             <br>
+                            <a id="detalle5"></a> 
+                             </td>  
+                              
+                     </tr >
+                     
+
+                 </table>
+                 <br>
+                 <h3>Cantidad de producto requerido</h3>
+                
+                <input type="text" size="3" id="precio" value="0" onChange="calculo(this.value,detalle4.value);">
+               
+                 <h3>Total</h3>
+               
+                <input type="text" id="totalText" size="8" value="0">;
+            
+                 </form>
+                 
+         
+             <div>
+                           
+                <input class="submit1" type="submit" value="Confirmar"  >
+  
+             </div>
+       
+       <a class="popup-cerrar" href="#">X</a>
+    </div>
+    
+    <script>
+                                 
+                function detalle3(){
+                    
+                        document.getElementById('detalle3').innerHTML = detalle2;
+                        document.getElementById('detalle4').innerHTML = precio2;
+                        document.getElementById('detalle5').innerHTML = disponibilidad2;
+                                  
+                              }
+        
+           
+                                        
+                </script>
+</div>
+   
+    
+   <footer class="footer">
+        <p>Marcos Acosta</p>
+        <p>Rodrigo González</p>
+        <p>Universidad Nacional de Canindeyú</p>
+    </footer>
+</html>
